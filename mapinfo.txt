@@ -1,1 +1,2 @@
 GameInfo { 	AddEventHandlers = "HDColt1911_Spawner" } 
+GameInfo { 	AddEventHandlers = "Colt45Injector" } 
