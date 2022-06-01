@@ -49,3 +49,14 @@ class HDColt1911EmptyMag:IdleDummy{
 		destroy();
 	}
 }
+
+class Colt45Injector:StaticEventHandler{
+override void WorldThingSpawned(WorldEvent e) { 
+  let Colt45 = HDAmmo(e.Thing); 	
+  if (Colt45){ 			
+    switch (Colt45.GetClassName()){
+      case 'HD45ACPAmmo': Colt45.ItemsThatUseThis.Push("HDColt1911"); 					break;		 		
+      }
+    }
+  } 	
+} 
