@@ -2,6 +2,10 @@ Colt 1911 .45 Pistol addon for Hideous Destructor
 
 Requires HDBulletLib for ammo resources
 
+Loadout codes:
+- [C19] - Colt 1911
+- [CM7] - 7-round Magazine
+
 Credits
 -------
 
