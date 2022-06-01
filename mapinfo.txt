@@ -1,0 +1,1 @@
+GameInfo { 	AddEventHandlers = "HDColt1911_Spawner" } 
