@@ -310,7 +310,7 @@ class HDColt1911:HDHandgun{
 		---- A 0{
 			invoker.weaponstatus[0]&=~PISF_JUSTUNLOAD;
 			bool nomags=HDMagAmmo.NothingLoaded(self,"HDColtMag7");
-			if(invoker.weaponstatus[PISS_MAG]>=8)setweaponstate("nope");
+			if(invoker.weaponstatus[PISS_MAG]>=7)setweaponstate("nope");
 			else if(
 				invoker.weaponstatus[PISS_MAG]<1
 				&&(
