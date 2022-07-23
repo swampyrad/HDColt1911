@@ -470,7 +470,7 @@ class HDColt1911:HDHandgun{
 		}stop;
 	}
 	override void initializewepstats(bool idfa){
-		weaponstatus[PISS_MAG]=8;
+		weaponstatus[PISS_MAG]=7;
 		weaponstatus[PISS_CHAMBER]=2;
 	}
 	override void loadoutconfigure(string input){
