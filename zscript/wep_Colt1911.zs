@@ -24,7 +24,7 @@ class HDColt1911:HDHandgun{
 	}
 	override double weaponbulk(){
 		int mgg=weaponstatus[PISS_MAG];
-		return 40+(mgg<0?0:(ENC_1911MAG_LOADED+mgg*ENC_45ACP_LOADED));
+		return 40+(mgg<0?0:(ENC_1911MAG_LOADED+mgg*HD45ACPAmmo.EncRoundLoaded));
 	}
 	override double gunmass(){
 		int mgg=weaponstatus[PISS_MAG];

@@ -2,7 +2,8 @@
 // Colt 1911 Ammo (Just the magazines)
 // -- ----------------------------------------------------------
 
-const enc_1911MAG=ENC_45ACP*8;
+const enc_1911MAG=HD45ACPAmmo.EncRoundLoaded*8;
+
 const enc_1911MAG_EMPTY=enc_1911MAG*0.3;
 
 const enc_1911MAG_LOADED=enc_1911MAG_EMPTY*0.1;
@@ -15,7 +16,7 @@ class HDColtMag7:HDMagAmmo{
 		//$Sprite "CMG7A0"
 		hdmagammo.maxperunit 7;
 		hdmagammo.roundtype "HD45ACPAmmo";
-		hdmagammo.roundbulk enc_45ACP_LOADED;
+		hdmagammo.roundbulk HD45ACPAmmo.EncRoundLoaded;
 		hdmagammo.magbulk enc_1911MAG_EMPTY;
 		tag "Colt 1911 magazine";
 		inventory.pickupmessage "Picked up a Colt 1911 magazine.";
