@@ -197,16 +197,27 @@ class HDColt1911:HDHandgun{
 			A_StartSound("weapons/pischamber2",8);
 			int psch=invoker.weaponstatus[PISS_CHAMBER];
 			invoker.weaponstatus[PISS_CHAMBER]=0;
-			if(psch==2){
-				A_EjectCasing("HD45ACPAmmo",8,-frandom(89,92),frandom(2,3),frandom(0,0.5));
-			}else if(psch==1){
-				A_EjectCasing("HDSpent45ACP",8,-frandom(89,92),frandom(6,7),frandom(0,1));
-			}
+
+    if(psch==2){
+				A_EjectCasing("HD45ACPAmmo",
+      -frandom(89,92),
+      (frandom(2,3),0,0),(13,0,0));			
+      }
+    else if(psch==1){	
+      A_EjectCasing("HDSpent45ACP",
+      -frandom(89,92),
+      (frandom(6,7),0,0),(13,0,0));
+			  }
+
 			if(invoker.weaponstatus[PISS_MAG]>0){
 				invoker.weaponstatus[PISS_CHAMBER]=2;
 				invoker.weaponstatus[PISS_MAG]--;
 			}
 		}
+/*
+
+*/
+
 		#### B 3 offset(0,35);
 		goto nope;
 	althold:
@@ -233,7 +244,11 @@ class HDColt1911:HDHandgun{
 			);
 		}
 		#### D 0{
-			A_EjectCasing("HDSpent45ACP",8,-frandom(89,92),frandom(6,7),frandom(0,1));
+
+			A_EjectCasing("HDSpent45ACP",
+      -frandom(89,92),
+      (frandom(6,7),0,0),(13,0,0));
+
 			invoker.weaponstatus[PISS_CHAMBER]=0;
 			if(invoker.weaponstatus[PISS_MAG]<1){
 				A_StartSound("weapons/pistoldry",8,CHANF_OVERLAP,0.9);
