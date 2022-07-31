@@ -19,9 +19,30 @@ offset -111,-58
 patch CT45D0,0,0{}
 }
 
-//muzzleflash sprite
-sprite C45FA0,98,111{
+//wronghand weapon sprites
+sprite C245A0,98,111{
 offset -111,-58
+patch C245A0,0,0{}
+}
+
+sprite C245B0,98,111{
+offset -111,-58
+patch C245B0,0,0{}
+}
+
+sprite C245C0,98,111{
+offset -111,-58
+patch C245C0,0,0{}
+}
+
+sprite C245D0,98,111{
+offset -111,-58
+patch C245D0,0,0{}
+}
+
+//muzzleflash sprite
+sprite C45FA0,35,37{
+offset -143,-67
 patch C45FA0,0,0{}
 }
 
