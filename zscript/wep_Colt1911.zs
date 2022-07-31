@@ -130,7 +130,8 @@ class HDColt1911:HDHandgun{
 		ForceOneBasicAmmo("HDColtMag7");
 	}
 	action void A_CheckPistolHand(){
-		if(invoker.wronghand)player.getpsprite(PSP_WEAPON).sprite=getspriteindex("CT45A0");//just use the same sprites lol
+		if(invoker.wronghand)player.getpsprite(PSP_WEAPON).sprite=getspriteindex("C245A0");  //i hate this line of code so much, it never works for me :(
+
 	}
 	states{
 	select0:
@@ -420,7 +421,7 @@ class HDColt1911:HDHandgun{
 		#### B 1 offset(-50,86);
 		stop;
 	lowerright:
-		CT45 A 0 ;
+		C245 A 0 ;
 		#### B 1 offset(6,38);
 		#### B 1 offset(12,48);
 		#### B 1 offset(20,60);
@@ -436,7 +437,7 @@ class HDColt1911:HDHandgun{
 		#### A 1 offset(-6,38);
 		stop;
 	raiseright:
-		CT45 A 0;
+		C245 A 0;
 		#### A 1 offset(50,86);
 		#### A 1 offset(34,76);
 		#### A 1 offset(20,60);
